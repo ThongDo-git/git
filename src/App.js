@@ -14,7 +14,8 @@ class App extends React.Component {
     this.setState({ email: e.target.value })
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
+    e.preventDefault()
     alert(this.state.email)
   }
 
