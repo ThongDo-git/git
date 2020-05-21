@@ -24,7 +24,7 @@ class App extends React.Component {
       <div className="App">
         <form onSubmit={this.handleSubmit}>
           <label htmlFor='email'>Email: </label>
-          <input type='text' value={this.state.email} onChange={this.handleChange} />
+          <input id='email' type='text' value={this.state.email} onChange={this.handleChange} />
           <input type='submit' value='Submit' />
         </form>
       </div>
